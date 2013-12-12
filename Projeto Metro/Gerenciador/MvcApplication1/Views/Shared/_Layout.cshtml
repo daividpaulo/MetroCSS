@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/bundles/jquery")
+
+    @Scripts.Render("~/Scripts/bootstrap")
+
+    <script>
+        $(function () {
+            $("#datepicker").datepicker(
+                {
+
+                }
+
+             );
+
+
+            $("#chamarPanel").on('click', function () {
+                $.Dialog({
+                    overlay: true,
+                    shadow: true,
+                    flat: true,
+                    width: '800px',
+                    height: '400px',
+                    position: 'center',
+                    title: 'Teste de Flats',
+                    content: '',
+                    onShow: function (_dialog) {
+                        var content = _dialog.children('.content');
+
+                        $.get('Principal/PartialTeste', function (result) {
+                            content.html(result);
+                        });
+                    }
+                });
+            });
+
+        })
+
+    </script>
+
+
+</head>
+<body class="metro">
+    <div class="grid">
+        <div class="navigation-bar bg-lightBlue fixed-top larguramenu">
+
+
+
+        </div>
+
+        <div class="container-large shadow larguramenu2">
+
+            @RenderBody()
+
+        </div>
+
+        <div class="fixed-bottom active">
+
+            <nav class="navigation-bar bg-dark fixed-bottom">
+                <nav class="navigation-bar-content">
+                    <a class="element brand" href="#"><span class="icon-home"></span></a>
+                    <a class="element brand" href="#"><span class="icon-printer"></span></a>
+                </nav>
+            </nav>
+
+        </div>
+
+    </div>
+   
+   
+
+
+
+
+</body>
+</html>

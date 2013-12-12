@@ -1,0 +1,40 @@
+.minhacordefundo{
+
+   /*background-color:rgb(51, 51, 51)!important;*/
+   background-color: lightsteelblue!important;
+
+}
+
+.larguramenu{
+
+    height: 100px !important;
+   
+
+}
+.larguramenu2{
+
+    padding-top: 100px !important;
+    min-height: 768px;
+
+}
+
+.geral:before {
+
+content: "CLIENTE" !important;
+
+}
+
+
+.TOTAL:before {
+
+    content: "OUTRO" !important;
+    height: auto;
+    min-height: 0px !important;
+}
+
+
+.geral2:before {
+
+   content: "OUTRO-2" !important;
+ 
+}

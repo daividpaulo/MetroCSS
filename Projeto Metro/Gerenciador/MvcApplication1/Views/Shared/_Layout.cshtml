@@ -38,30 +38,40 @@
                             content.html(result);
                         });
                     }
-                });
-            });
-
-        })
+               });
+             });
+           })
 
     </script>
 
 
 </head>
-<body class="metro">
-    <div class="grid">
-        <div class="navigation-bar bg-lightBlue fixed-top larguramenu">
+<body class="metro ">
+    <div class="grid fluid">
+        <div class="navigation-bar bg-lightBlue fixed-top larguramenu grid fluid">
 
+
+            <div class="metro tile-area user-id">
+                <div class="user-id-image">
+                    <span class="icon-user no-display1"></span>
+                    <img src="images/Battlefield_4_Icon.png" class="no-display">
+                </div>
+                <div class="user-id-name">
+                    <span class="first-name">Daivid</span>
+                    <span class="last-name">Paulo</span>
+                </div>
+            </div>
 
 
         </div>
 
-        <div class="container-large shadow larguramenu2">
+        <div class="container-large shadow larguramenu2 grid fluid">
 
             @RenderBody()
 
         </div>
 
-        <div class="fixed-bottom active">
+        <div class="fixed-bottom active grid fluid">
 
             <nav class="navigation-bar bg-dark fixed-bottom">
                 <nav class="navigation-bar-content">

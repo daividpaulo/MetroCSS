@@ -1,0 +1,2 @@
+public int StatusBd { get; private set; }
+        public virtual Status Status { get { return (Status)StatusBd; } set { StatusBd = (int)value; } }
